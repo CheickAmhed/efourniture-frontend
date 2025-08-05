@@ -1145,6 +1145,7 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
 .product-featured .showcase-desc {
   color: var(--sonic-silver);
   font-size: var(--fs-7);
+  text-overflow: ellipsis;
   font-weight: var(--weight-300);
   margin-bottom: 10px;
 }
@@ -1367,6 +1368,7 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
   color: var(--sonic-silver);
   font-size: var(--fs-8);
   font-weight: var(--weight-300);
+  text-overflow: ellipsis;
   text-transform: capitalize;
   letter-spacing: 1px;
   margin-bottom: 10px;
