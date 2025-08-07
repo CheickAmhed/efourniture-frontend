@@ -1,14 +1,11 @@
 'use strict';
 
-// modal variables
+// modal
 const modal = document.querySelector('[data-modal]');
 const modalCloseBtn = document.querySelector('[data-modal-close]');
 const modalCloseOverlay = document.querySelector('[data-modal-overlay]');
-
-// modal function
 const modalCloseFunc = function () { modal.classList.add('closed') }
 
-// modal eventListener
 modalCloseOverlay.addEventListener('click', modalCloseFunc);
 modalCloseBtn.addEventListener('click', modalCloseFunc);
 
@@ -16,11 +13,10 @@ modalCloseBtn.addEventListener('click', modalCloseFunc);
 
 
 
-// notification toast variables
+// notification toast
 const notificationToast = document.querySelector('[data-toast]');
 const toastCloseBtn = document.querySelector('[data-toast-close]');
 
-// notification toast eventListener
 toastCloseBtn.addEventListener('click', function () {
   notificationToast.classList.add('closed');
 });
@@ -29,7 +25,7 @@ toastCloseBtn.addEventListener('click', function () {
 
 
 
-// mobile menu variables
+// mobile menu
 const mobileMenuOpenBtn = document.querySelectorAll('[data-mobile-menu-open-btn]');
 const mobileMenu = document.querySelectorAll('[data-mobile-menu]');
 const mobileMenuCloseBtn = document.querySelectorAll('[data-mobile-menu-close-btn]');
@@ -57,7 +53,7 @@ for (let i = 0; i < mobileMenuOpenBtn.length; i++) {
 
 
 
-// accordion variables
+// accordion
 const accordionBtn = document.querySelectorAll('[data-accordion-btn]');
 const accordion = document.querySelectorAll('[data-accordion]');
 
@@ -127,32 +123,47 @@ function typeText() {
 
   typeChar();
 }
+typeText();
 
-typeText(); // Start the animation
+
+// Navigation Setup
+function setupNavigation() {
+    const navLinks = document.querySelectorAll('.nav-link');
+    const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+    
+    navLinks.forEach(link => {
+        const href = link.getAttribute('href');
+        if (href === currentPage || (currentPage === '' && href === 'index.html')) {
+            link.classList.add('active');
+        } else {
+            link.classList.remove('active');
+        }
+    });
+}
+setupNavigation();
+
 
 
 
 // banner
+const track = document.querySelector('.banner-carousel-track');
+const slides = document.querySelectorAll('.banner-carousel-item');
+let current = 0;
 
-  const track = document.querySelector('.banner-carousel-track');
-  const slides = document.querySelectorAll('.banner-carousel-item');
-  let current = 0;
+function updateCarousel() {
+  slides.forEach((slide, index) => {
+    slide.classList.remove('active');
+    if (index === current) {
+      slide.classList.add('active');
+    }
+  });
+  const offset = -current * 100;
+  track.style.transform = `translateX(${offset}%)`;
+}
 
-  function updateCarousel() {
-    slides.forEach((slide, index) => {
-      slide.classList.remove('active');
-      if (index === current) {
-        slide.classList.add('active');
-      }
-    });
-    const offset = -current * 100;
-    track.style.transform = `translateX(${offset}%)`;
-  }
-
-  function nextSlide() {
-    current = (current + 1) % slides.length;
-    updateCarousel();
-  }
-
-  updateCarousel();
-  setInterval(nextSlide, 5000);
+function nextSlide() {
+  current = (current + 1) % slides.length;
+   updateCarousel();
+}
+updateCarousel();
+setInterval(nextSlide, 5000);
