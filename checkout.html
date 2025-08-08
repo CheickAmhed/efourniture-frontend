@@ -1,0 +1,1229 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+    <meta name="description" content="Plateforme e-commerce d'achat de fourniture scolaire au Burkina Faso">
+    <meta name="keywords" content="Plateforme, E-commerce, Fourniture, Scolaire, Burkina Faso, Accueille">
+    <meta name="author" content="FIKASSO Security">
+
+    <title>Bangré-Fourniture-Scolaire-Fournitures</title>
+    <link rel="shortcut icon" href="./assets/images/logo/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/checkout.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap">
+
+</head>
+
+<body>
+
+    <div class="overlay" data-overlay></div>
+
+    <div class="modal" data-modal>
+
+        <div class="modal-close-overlay" data-modal-overlay></div>
+
+        <div class="modal-content">
+
+            <button class="modal-close-btn" data-modal-close>
+                <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="newsletter-img">
+                <img src="./assets/images/newsletter.png" alt="subscribe newsletter" width="400" height="400">
+            </div>
+
+            <div class="newsletter">
+
+                <form action="#">
+
+                    <div class="newsletter-header">
+
+                        <h3 class="newsletter-title">Abonnez-vous à la newsletter</h3>
+
+                        <p class="newsletter-desc">
+                            Abonnez-vous à <b>E-fourniture</b> pour recevoir les dernières nouveautés et les mises à
+                            jour sur les promotions.
+                        </p>
+
+                    </div>
+
+                    <input type="email" name="email" class="email-field" placeholder="Adresse Email" required>
+
+                    <button type="submit" class="btn-newsletter">S'abonner</button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="notification-toast" data-toast>
+
+        <button class="toast-close-btn" data-toast-close>
+            <ion-icon name="close-outline"></ion-icon>
+        </button>
+
+        <div class="toast-banner">
+            <img src="./assets/images/products/prod30.png" alt="Rose Gold Earrings" width="80" height="70">
+        </div>
+
+        <div class="toast-detail">
+
+            <p class="toast-message">
+                Quelqu'un vient d'acheter
+            </p>
+
+            <p class="toast-title">
+                Sac USB étanche antivol
+            </p>
+
+            <p class="toast-meta">
+                Il y'a <time datetime="PT2M">2 minutes</time>
+            </p>
+
+        </div>
+
+    </div>
+
+    <header>
+
+        <div class="header-top">
+
+            <div style="display: flex; justify-content: space-between;">
+
+                <ul class="header-social-container">
+
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-twitter"></ion-icon>
+                        </a>
+                    </li>
+
+                </ul>
+
+                <div class="header-alert-news">
+                    <span class="dynamic-text"></span>
+                </div>
+
+                <ul class="header-social-container">
+
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-linkedin"></ion-icon>
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+        <div class="header-main">
+            <div class="container">
+
+                <div class="header-logo-menu">
+                    <a href="index.html" class="header-logo">
+                        <img src="./assets/images/logo/logo.png" alt="logo" width="50" height="50">
+                    </a>
+
+                    <button class="action-btn action-btn-menu" data-mobile-menu-open-btn>
+                        <ion-icon name="menu-outline" size="large"></ion-icon>
+                    </button>
+                </div>
+
+                <div class="header-search-container">
+
+                    <input type="search" name="search" class="search-field"
+                        placeholder="Entrez ce que vous cherchez...">
+
+                    <button class="search-btn">
+                        <ion-icon name="search-outline"></ion-icon>
+                    </button>
+
+                </div>
+
+                <div class="header-user-actions">
+
+                    <a href="cart.html" class="action-btn">
+                        <ion-icon name="bag-outline" class="action-btn-icon active"></ion-icon>
+                        <span class="count">3</span>
+                    </a>
+
+                    <a href="notification.html" class="action-btn">
+                        <ion-icon name="notifications-outline" class="action-btn-icon"></ion-icon>
+                        <span class="count">7</span>
+                    </a>
+
+                    <a href="setting.html" class="action-btn">
+                        <ion-icon name="grid-outline" class="action-btn-icon"></ion-icon>
+                    </a>
+
+                </div>
+
+            </div>
+        </div>
+
+        <nav class="desktop-navigation-menu">
+            <div class="container">
+
+                <ul class="desktop-menu-category-list">
+
+                    <li class="menu-category">
+                        <a href="index.html" class="menu-title">Accueille</a>
+                    </li>
+
+                    <li class="menu-category">
+                        <a href="prod.html" class="menu-title">Fournitures</a>
+
+                        <div class="dropdown-panel">
+
+                            <ul class="dropdown-panel-list">
+
+                                <li class="menu-title">
+                                    <a href="prod.html" style="color: var(--bittersweet);">Papeterie</a>
+                                </li>
+
+                                <li class="panel-list-item">
+                                    <a href="prod.html">Cahiers & Blocs-notes</a>
+                                </li>
+
+                                <li class="panel-list-item">
+                                    <a href="prod.html">Feuilles & Copies</a>
+                                </li>
+
+                                <li class="panel-list-item">
+                                    <a href="prod.html">Stylos & Crayons</a>
+                                </li>
+
+                                <li class="panel-list-item">
+                                    <a href="prod.html">Gommes & Tailles-crayon</a>
+                                </li>
+
+                                <li class="panel-list-item">
+                                    <a href="prod.html">Règles & Équerres</a>
+                                </li>
+
+                                <li class="panel-list-item">
+                                    <a href="prod.html">
+                                        <img src="./assets/images/categories/stationry-2.png" alt="headphone collection"
+                                            style="width: 290px; height: 150px;">
+                                    </a>
+                                </li>
+
+                            </ul>
+
+                            <ul class="dropdown-panel-list">
+
+                                <li class="menu-title">
+                                    <a href="prod.html" style="color: var(--bittersweet);">Sacs et Cartables</a>
+                                </li>
+
+                                <li class="panel-list-item">
+                                    <a href="prod.html">Cartables Élèves</a>
+                                </li>
+
+                                <li class="panel-list-item">
+                                    <a href="prod.html">Sacs à Dos Lycéens</a>
+                                </li>
+
+                                <li class="panel-list-item">
+                                    <a href="prod.html">Trousses</a>
+                                </li>
+
+                                <li class="panel-list-item">
+                                    <a href="prod.html">Sacoches pour Ordinateur</a>
+                                </li>
+
+                                <li class="panel-list-item">
+                                    <a href="prod.html">Sacs à Roulettes</a>
+                                </li>
+
+                                <li class="panel-list-item">
+                                    <a href="prod.html">
+                                        <img src="./assets/images/categories/bag.png" alt="men's fashion"
+                                            style="width: 290px; height: 150px;">
+                                    </a>
+                                </li>
+
+                            </ul>
+
+                            <ul class="dropdown-panel-list">
+
+                                <li class="menu-title">
+                                    <a href="prod.html" style="color: var(--bittersweet);">Fournitures Scolaires de
+                                        Base</a>
+                                </li>
+
+                                <li class="panel-list-item">
+                                    <a href="prod.html">Ardoises & Feutres</a>
+                                </li>
+
+                                <li class="panel-list-item">
+                                    <a href="prod.html">Colles & Ciseaux</a>
+                                </li>
+
+                                <li class="panel-list-item">
+                                    <a href="prod.html">Compas & Rapporteurs</a>
+                                </li>
+
+                                <li class="panel-list-item">
+                                    <a href="prod.html">Agrafeuses & Attaches</a>
+                                </li>
+
+                                <li class="panel-list-item">
+                                    <a href="prod.html">Intercalaires & Pochettes</a>
+                                </li>
+
+                                <li class="panel-list-item">
+                                    <a href="prod.html">
+                                        <img src="./assets/images/categories/furniture-2.png" alt="women's fashion"
+                                            style="width: 290px; height: 150px;">
+                                    </a>
+                                </li>
+
+                            </ul>
+
+                            <ul class="dropdown-panel-list">
+
+                                <li class="menu-title">
+                                    <a href="prod.html" style="color: var(--bittersweet);">Livres et Manuels</a>
+                                </li>
+
+                                <li class="panel-list-item">
+                                    <a href="prod.html">Livres de Lecture</a>
+                                </li>
+
+                                <li class="panel-list-item">
+                                    <a href="prod.html">Manuels Scolaires</a>
+                                </li>
+
+                                <li class="panel-list-item">
+                                    <a href="prod.html">Livres Parascolaires</a>
+                                </li>
+
+                                <li class="panel-list-item">
+                                    <a href="prod.html">Dictionnaires</a>
+                                </li>
+
+                                <li class="panel-list-item">
+                                    <a href="prod.html">Œuvres littéraires</a>
+                                </li>
+
+                                <li class="panel-list-item">
+                                    <a href="prod.html">
+                                        <img src="./assets/images/categories/book-2.png" alt="mouse collection"
+                                            style="width: 290px; height: 150px;">
+                                    </a>
+                                </li>
+
+                            </ul>
+
+                        </div>
+                    </li>
+
+                    <li class="menu-category">
+                        <a href="list.html" class="menu-title">Listes</a>
+                    </li>
+
+                    <li class="menu-category">
+                        <a href="about.html" class="menu-title">A propos</a>
+                    </li>
+
+                    <li class="menu-category">
+                        <a href="help.html" class="menu-title">Aide</a>
+                    </li>
+
+                    <li class="menu-category">
+                        <a href="contact.html" class="menu-title">Contact</a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </nav>
+
+        <div class="mobile-bottom-navigation">
+
+            <a href="index.html" class="action-btn">
+                <ion-icon name="home-outline" class="action-btn-icon"></ion-icon>
+            </a>
+            <!--
+      <button class="action-btn" data-mobile-menu-open-btn>
+        <ion-icon name="grid-outline"></ion-icon>
+      </button>
+    -->
+            <a href="cart.html" class="action-btn">
+                <ion-icon name="bag-outline" class="action-btn-icon active"></ion-icon>
+                <span class="count">3</span>
+            </a>
+
+            <a href="notification.html" class="action-btn">
+                <ion-icon name="notifications-outline" class="action-btn-icon"></ion-icon>
+                <span class="count">7</span>
+            </a>
+
+            <a href="setting.html" class="action-btn">
+                <ion-icon name="grid-outline" class="action-btn-icon"></ion-icon>
+            </a>
+        </div>
+
+        <nav class="mobile-navigation-menu  has-scrollbar" data-mobile-menu>
+
+            <div class="menu-top">
+                <h2 class="menu-title">Menu</h2>
+
+                <button class="menu-close-btn" data-mobile-menu-close-btn>
+                    <ion-icon name="close-outline"></ion-icon>
+                </button>
+            </div>
+
+            <ul class="mobile-menu-category-list">
+
+                <li class="menu-category active">
+                    <a href="index.html" class="menu-title">Accueille</a>
+                </li>
+
+                <li class="menu-category">
+                    <a href="prod.html" class="menu-title">Fournitures</a>
+
+                    <div class="dropdown-panel">
+
+                        <ul class="dropdown-panel-list">
+
+                            <li class="menu-title">
+                                <a href="prod.html" style="color: var(--bittersweet);">Papeterie</a>
+                            </li>
+
+                            <li class="panel-list-item">
+                                <a href="prod.html">Cahiers & Blocs-notes</a>
+                            </li>
+
+                            <li class="panel-list-item">
+                                <a href="prod.html">Feuilles & Copies</a>
+                            </li>
+
+                            <li class="panel-list-item">
+                                <a href="prod.html">Stylos & Crayons</a>
+                            </li>
+
+                            <li class="panel-list-item">
+                                <a href="prod.html">Gommes & Tailles-crayon</a>
+                            </li>
+
+                            <li class="panel-list-item">
+                                <a href="prod.html">Règles & Équerres</a>
+                            </li>
+
+                            <li class="panel-list-item">
+                                <a href="prod.html">
+                                    <img src="./assets/images/categories/stationry-2.png" alt="headphone collection"
+                                        style="width: 280px; height: 150px;">
+                                </a>
+                            </li>
+
+                        </ul>
+
+                        <ul class="dropdown-panel-list">
+
+                            <li class="menu-title">
+                                <a href="prod.html" style="color: var(--bittersweet);">Sacs et Cartables</a>
+                            </li>
+
+                            <li class="panel-list-item">
+                                <a href="prod.html">Cartables Élèves</a>
+                            </li>
+
+                            <li class="panel-list-item">
+                                <a href="prod.html">Sacs à Dos Lycéens</a>
+                            </li>
+
+                            <li class="panel-list-item">
+                                <a href="prod.html">Trousses</a>
+                            </li>
+
+                            <li class="panel-list-item">
+                                <a href="prod.html">Sacoches pour Ordinateur</a>
+                            </li>
+
+                            <li class="panel-list-item">
+                                <a href="prod.html">Sacs à Roulettes</a>
+                            </li>
+
+                            <li class="panel-list-item">
+                                <a href="prod.html">
+                                    <img src="./assets/images/categories/bag.png" alt="men's fashion"
+                                        style="width: 280px; height: 150px;">
+                                </a>
+                            </li>
+
+                        </ul>
+
+                        <ul class="dropdown-panel-list">
+
+                            <li class="menu-title">
+                                <a href="prod.html" style="color: var(--bittersweet);">Fournitures Scolaires de Base</a>
+                            </li>
+
+                            <li class="panel-list-item">
+                                <a href="prod.html">Ardoises & Feutres</a>
+                            </li>
+
+                            <li class="panel-list-item">
+                                <a href="prod.html">Colles & Ciseaux</a>
+                            </li>
+
+                            <li class="panel-list-item">
+                                <a href="prod.html">Compas & Rapporteurs</a>
+                            </li>
+
+                            <li class="panel-list-item">
+                                <a href="prod.html">Agrafeuses & Attaches</a>
+                            </li>
+
+                            <li class="panel-list-item">
+                                <a href="prod.html">Intercalaires & Pochettes</a>
+                            </li>
+
+                            <li class="panel-list-item">
+                                <a href="prod.html">
+                                    <img src="./assets/images/categories/furniture-2.png" alt="women's fashion"
+                                        style="width: 280px; height: 150px;">
+                                </a>
+                            </li>
+
+                        </ul>
+
+                        <ul class="dropdown-panel-list">
+
+                            <li class="menu-title">
+                                <a href="prod.html" style="color: var(--bittersweet);">Livres et Manuels</a>
+                            </li>
+
+                            <li class="panel-list-item">
+                                <a href="prod.html">Livres de Lecture</a>
+                            </li>
+
+                            <li class="panel-list-item">
+                                <a href="prod.html">Manuels Scolaires</a>
+                            </li>
+
+                            <li class="panel-list-item">
+                                <a href="prod.html">Livres Parascolaires</a>
+                            </li>
+
+                            <li class="panel-list-item">
+                                <a href="prod.html">Dictionnaires</a>
+                            </li>
+
+                            <li class="panel-list-item">
+                                <a href="prod.html">Œuvres littéraires</a>
+                            </li>
+
+                            <li class="panel-list-item">
+                                <a href="prod.html">
+                                    <img src="./assets/images/categories/book-2.png" alt="mouse collection"
+                                        style="width: 280px; height: 150px;">
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+                </li>
+
+                <li class="menu-category">
+                    <a href="list.html" class="menu-title">Listes</a>
+                </li>
+
+                <li class="menu-category">
+                    <a href="about.html" class="menu-title">A propos</a>
+                </li>
+
+                <li class="menu-category">
+                    <a href="help.html" class="menu-title">Aide</a>
+                </li>
+
+                <li class="menu-category">
+                    <a href="contact.html" class="menu-title">Contact</a>
+                </li>
+
+            </ul>
+
+            <div class="menu-bottom">
+                <ul class="menu-social-container">
+
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-twitter"></ion-icon>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-linkedin"></ion-icon>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+        </nav>
+
+    </header>
+
+    <main>
+        <div class="banner">
+            <div class="container">
+                <div class="banner-carousel">
+                    <div class="banner-carousel-track">
+                        <div class="banner-carousel-item">
+
+                            <img src="./assets/images/banner-1.png" alt="women's latest fashion sale"
+                                class="banner-img">
+
+                            <div class="banner-content">
+
+                                <p class="banner-subtitle">Retour à l'école</p>
+
+                                <h2 class="banner-title">Préparez la rentrée en toute sérénité!</h2>
+
+                                <p class="banner-text">
+                                    Découvrez tout le nécessaire pour une rentrée réussie, à petits prix.
+                                </p>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="checkout-process">
+            <div class="container">
+                <h2 class="section-title">Processus de Commande</h2>
+
+                <div class="checkout-steps">
+                    <div class="step active" data-step="1">
+                        <div class="step-icon">1</div>
+                        <div class="step-title">Adresse de Livraison</div>
+                    </div>
+                    <div class="step" data-step="2">
+                        <div class="step-icon">2</div>
+                        <div class="step-title">Méthode de Paiement</div>
+                    </div>
+                    <div class="step" data-step="3">
+                        <div class="step-icon">3</div>
+                        <div class="step-title">Récapitulatif</div>
+                    </div>
+                </div>
+
+                <div class="checkout-content">
+
+                    <!-- Step 1: Delivery Address -->
+                    <div class="checkout-section active" id="delivery-address">
+                        <h3>Sélectionnez votre adresse de livraison</h3>
+                        <div class="map-container">
+                            <!-- <div id="map" style="height: 400px; width: 100%;"></div> -->
+                             <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d12248.123456789!2d-1.501158!3d12.409653!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1690000000000!5m2!1sen!2sus"
+                                style="border:0;"
+                                allowfullscreen=""
+                                loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+
+                        </div>
+                        <form class="address-form">
+                            <label for="full-address">Adresse Complète *</label>
+                            <input type="text" id="full-address" placeholder="Ave des Comores, Somgandé, Ouagadougou" readonly style="width: 100%; padding: 0.75rem; border: 1px solid var(--gray-300); border-radius: 0.5rem;">
+
+                            <label for="delivery-notes">Notes de livraison (facultatif):</label>
+                            <textarea id="delivery-notes" rows="3" placeholder="Ex: Laisser le colis chez le voisin" style="width: 100%; padding: 0.75rem; border: 1px solid var(--gray-300); border-radius: 0.5rem; height: 100px; resize: vertical;"></textarea>
+
+                            <button type="button" class="btn btn-primary next-step" data-next-step="2">
+                                Paiement
+                            </button>
+                        </form>
+                    </div>
+
+                    <!-- Step 2: Payment Methods -->
+                    <div class="checkout-section" id="payment-methods">
+                        <h3>Choisissez votre mode de paiement</h3>
+
+                        <section>
+                            <div class="grid grid-cols-2">
+                                <div id="mobile-payment" class="card payment-method" style="cursor: pointer;" data-method="mobile">
+                                    <div class="card-content" style="text-align: center;">
+                                        <div style="font-size: 3rem; color: var(--primary-blue); margin-bottom: 1rem;">📱</div>
+                                        <h3 style="font-size: 1.25rem; font-weight: bold; margin-bottom: 0.5rem;">Paiement Mobile Money</h3>
+                                        <p style="color: var(--gray-600);">Orange Money, Moov Money, etc...</p>
+                                    </div>
+                                </div>
+                                
+                                <div id="card-payment" class="card payment-method" style="cursor: pointer;" data-method="card">
+                                    <div class="card-content" style="text-align: center;">
+                                        <div style="font-size: 3rem; color: var(--green-500); margin-bottom: 1rem;">💳</div>
+                                        <h3 style="font-size: 1.25rem; font-weight: bold; margin-bottom: 0.5rem;">Paiement Bancaire</h3>
+                                        <p style="color: var(--gray-600);">Banque, Visa, Mastercard, etc...</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section>
+                            <div class="card">
+                                <div class="card-content">
+
+                                    <div id="mobile-payment-content" class="grid grid-cols-2" style="gap: 1.5rem;">
+                                        <h4 style="font-size: 1.8rem;color: var(--bittersweet);margin-bottom: 15px;">Effectuer le paiement sur la Plateforme</h4>
+
+                                        <div style="padding: 20px;border: 1px dashed var(--bittersweet);border-radius: 8px;background-color: var(--misty-rose);margin-bottom: 30px;">
+                                            <div style="display: flex; gap: 1rem;">
+                                                <div style="flex: 1;">
+                                                    <label for="operator" style="display: block; font-weight: 600; margin-bottom: 0.5rem;">Opérateur *</label>
+                                                    <select name="operator" id="operator" required style="width: 100%; padding: 0.75rem; border: 1px solid var(--gray-300); border-radius: 0.5rem; background:none;">
+                                                        <option value="" selected disabled hidden></option>
+                                                        <option value="orange">Orange Money</option>
+                                                        <option value="moov">Moov Money</option>
+                                                        <option value="telecel">Telecel Money</option>
+                                                        <option value="sank">Sank Money</option>
+                                                    </select>
+                                                </div>
+
+                                                <div style="flex: 1;">
+                                                    <label for="phone" style="display: block; font-weight: 600; margin-bottom: 0.5rem;">Téléphone *</label>
+                                                    <input 
+                                                        id="phone" 
+                                                        name="phone"
+                                                        type="tel" 
+                                                        required 
+                                                        style="width: 100%; padding: 0.75rem; border: 1px solid var(--gray-300); border-radius: 0.5rem;"
+                                                    >
+                                                </div>
+                                            </div>
+
+                                            <div>
+                                                <label for="otp" style="display: block; font-weight: 600; margin-bottom: 0.5rem;">Code OTP *</label>
+                                                <input 
+                                                    id="otp" 
+                                                    name="otp"
+                                                    type="number" 
+                                                    required 
+                                                    style="width: 100%; padding: 0.75rem; border: 1px solid var(--gray-300); border-radius: 0.5rem;"
+                                                >
+                                            </div>
+                                        </div>
+
+                                        <br>
+
+                                        <div class="payment-details" id="mobile-money-details">
+                                            <h4>Effectuer un Depôt Mobile Money</h4>
+                                            <p>Veuillez envoyer le montant total à l'un des numéros suivants:</p>
+                                            <ul>
+                                                <li>Moov Money: +226 70 00 00 00</li>
+                                                <li>Orange Money: +226 76 00 00 00</li>
+                                                <li>Telecel Money: +226 78 00 00 00</li>
+                                            </ul>
+                                            <label for="transaction-id" style="display: block; font-weight: 600; margin-bottom: 0.5rem;">ID de Transaction *</label>
+                                            <input type="text" id="transaction-id" placeholder="Entrez l'ID de votre transaction" required>
+                                        </div>
+
+                                    </div>
+
+                                    <div id="card-payment-content" class="grid grid-cols-2" style="gap: 1.5rem; display: none;">
+                                        <div style="padding: 20px;border: 1px dashed var(--bittersweet);border-radius: 8px;background-color: var(--misty-rose);margin-bottom: 30px;">
+                                            <h4 style="font-size: 1.8rem;color: var(--bittersweet);margin-bottom: 15px;">Effectuer le paiement sur la Plateforme</h4>
+
+                                            <div>
+                                                <label for="card-number" style="display: block; font-weight: 600; margin-bottom: 0.5rem;">Numero de carte *</label>
+                                                <input 
+                                                    id="card-number" 
+                                                    name="card-number"
+                                                    type="number" 
+                                                    required 
+                                                    style="width: 100%; padding: 0.75rem; border: 1px solid var(--gray-300); border-radius: 0.5rem;"
+                                                >
+                                            </div>
+
+                                            <div style="display: flex; gap: 1rem;">
+                                                <div style="flex: 1;">
+                                                    <label for="exp-date" style="display: block; font-weight: 600; margin-bottom: 0.5rem;">Date d'expiration *</label>
+                                                    <input 
+                                                        id="exp-date" 
+                                                        name="exp-date"
+                                                        type="date" 
+                                                        required 
+                                                        style="width: 100%; padding: 0.75rem; border: 1px solid var(--gray-300); border-radius: 0.5rem;"
+                                                    >
+                                                </div>
+                                                <div style="flex: 1;">
+                                                    <label for="cvc" style="display: block; font-weight: 600; margin-bottom: 0.5rem;">CVC *</label>
+                                                    <input 
+                                                        id="cvc" 
+                                                        name="cvc"
+                                                        type="number" 
+                                                        required 
+                                                        style="width: 100%; padding: 0.75rem; border: 1px solid var(--gray-300); border-radius: 0.5rem;"
+                                                    >
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <br>
+
+                                        <div class="payment-details" id="bank-transfer-details">
+                                            <h4>Effectuer un Virement Bancaire</h4>
+                                            <p>Veuillez effectuer un virement au compte suivant:</p>
+                                            <ul>
+                                                <li>Nom de la Banque: Coris Bank</li>
+                                                <li>Nom du Compte: Bangre SARL</li>
+                                                <li>Numéro de Compte: 413548756987</li>
+                                                <li>Code SWIFT: BUBFBFBF</li>
+                                            </ul>
+                                            <label for="bank-ref" style="display: block; font-weight: 600; margin-bottom: 0.5rem;">Référence du Virement *</label>
+                                            <input type="text" id="bank-ref" placeholder="Entrez la référence de votre virement" required>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <br>
+
+                        <section style="background: var(--gray-50); border-radius: 1.5rem; padding: 2rem;">
+                            <div style="text-align: center; margin-bottom: 1.5rem;">
+                                <div style="font-size: 3rem; color: var(--green-500); margin-bottom: 1rem;">🛡️</div>
+                                <h3 style="font-size: 1.5rem; font-weight: bold; color: var(--gray-900); margin-bottom: 0.5rem;">
+                                    Paiement sécurisé
+                                </h3>
+                                <p style="color: var(--gray-600);">
+                                    Vos informations sont protégées et votre don est traité de manière sécurisée
+                                </p>
+                            </div>
+                            <div class="grid grid-cols-3" style="text-align: center;">
+                                <div style="display: flex; align-items: center; justify-content: center; gap: 0.5rem;">
+                                    <span style="color: var(--green-500);">✅</span>
+                                    <span style="font-size: 0.875rem; color: var(--gray-600);">Cryptage SSL</span>
+                                </div>
+                                <div style="display: flex; align-items: center; justify-content: center; gap: 0.5rem;">
+                                    <span style="color: var(--green-500);">✅</span>
+                                    <span style="font-size: 0.875rem; color: var(--gray-600);">Reçu fiscal</span>
+                                </div>
+                                <div style="display: flex; align-items: center; justify-content: center; gap: 0.5rem;">
+                                    <span style="color: var(--green-500);">✅</span>
+                                    <span style="font-size: 0.875rem; color: var(--gray-600);">Transparence totale</span>
+                                </div>
+                            </div>
+                        </section>
+
+
+                        <div class="checkout-actions">
+                            <button type="button" class="btn btn-primary next-step" data-next-step="3">
+                                Récapitulatif
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Step 3: Summary -->
+                    <div class="checkout-section" id="order-summary">
+                        <h3>Récapitulatif de votre commande</h3>
+                        <div class="summary-details">
+
+                            <ul id="summary-items">
+                                <li><span><h4>Adresse de Livraison:</h4></span><span>Ave des Comores, Somgandé, Ouagadougou, Burkina Faso</span></li>
+                                <li><span><h4>Mode de Paiement: </h4></span><span>Orange Money (+226 75 00 00 00)</span></li>
+                            </ul>
+
+                            <h4>Articles commandés:</h4>
+                            <ul id="summary-items">
+                                <li><span>Produit A</span><span>1 x 15.000 FCFA</span></li>
+                                <li><span>Produit B</span><span>2 x 5.000 FCFA</span></li>
+                                <li><span>Frais de livraison</span><span>2.500 FCFA</span></li>
+                            </ul>
+
+                            <div class="summary-total">
+                                <span>Total:</span>
+                                <span id="summary-total-amount">32.500 FCFA</span>
+                            </div>
+                        </div>
+
+                        <div class="checkout-actions">
+                            <button type="button" class="btn btn-secondary">Annuler la commande</button>
+                            <button type="button" class="btn btn-success" id="place-order-btn">Confirmer la commande</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-category">
+
+            <div class="container">
+
+                <h2 class="footer-category-title">Brand directory</h2>
+
+                <div class="footer-category-box">
+
+                    <h3 class="category-box-title">Fashion :</h3>
+
+                    <a href="#" class="footer-category-link">T-shirt</a>
+                    <a href="#" class="footer-category-link">Shirts</a>
+                    <a href="#" class="footer-category-link">shorts & jeans</a>
+                    <a href="#" class="footer-category-link">jacket</a>
+                    <a href="#" class="footer-category-link">dress & frock</a>
+                    <a href="#" class="footer-category-link">innerwear</a>
+                    <a href="#" class="footer-category-link">hosiery</a>
+
+                </div>
+
+                <div class="footer-category-box">
+                    <h3 class="category-box-title">footwear :</h3>
+
+                    <a href="#" class="footer-category-link">sport</a>
+                    <a href="#" class="footer-category-link">formal</a>
+                    <a href="#" class="footer-category-link">Boots</a>
+                    <a href="#" class="footer-category-link">casual</a>
+                    <a href="#" class="footer-category-link">cowboy shoes</a>
+                    <a href="#" class="footer-category-link">safety shoes</a>
+                    <a href="#" class="footer-category-link">Party wear shoes</a>
+                    <a href="#" class="footer-category-link">Branded</a>
+                    <a href="#" class="footer-category-link">Firstcopy</a>
+                    <a href="#" class="footer-category-link">Long shoes</a>
+                </div>
+
+                <div class="footer-category-box">
+                    <h3 class="category-box-title">jewellery :</h3>
+
+                    <a href="#" class="footer-category-link">Necklace</a>
+                    <a href="#" class="footer-category-link">Earrings</a>
+                    <a href="#" class="footer-category-link">Couple rings</a>
+                    <a href="#" class="footer-category-link">Pendants</a>
+                    <a href="#" class="footer-category-link">Crystal</a>
+                    <a href="#" class="footer-category-link">Bangles</a>
+                    <a href="#" class="footer-category-link">bracelets</a>
+                    <a href="#" class="footer-category-link">nosepin</a>
+                    <a href="#" class="footer-category-link">chain</a>
+                    <a href="#" class="footer-category-link">Earrings</a>
+                    <a href="#" class="footer-category-link">Couple rings</a>
+                </div>
+
+                <div class="footer-category-box">
+                    <h3 class="category-box-title">cosmetics :</h3>
+
+                    <a href="#" class="footer-category-link">Shampoo</a>
+                    <a href="#" class="footer-category-link">Bodywash</a>
+                    <a href="#" class="footer-category-link">Facewash</a>
+                    <a href="#" class="footer-category-link">makeup kit</a>
+                    <a href="#" class="footer-category-link">liner</a>
+                    <a href="#" class="footer-category-link">lipstick</a>
+                    <a href="#" class="footer-category-link">prefume</a>
+                    <a href="#" class="footer-category-link">Body soap</a>
+                    <a href="#" class="footer-category-link">scrub</a>
+                    <a href="#" class="footer-category-link">hair gel</a>
+                    <a href="#" class="footer-category-link">hair colors</a>
+                    <a href="#" class="footer-category-link">hair dye</a>
+                    <a href="#" class="footer-category-link">sunscreen</a>
+                    <a href="#" class="footer-category-link">skin loson</a>
+                    <a href="#" class="footer-category-link">liner</a>
+                    <a href="#" class="footer-category-link">lipstick</a>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="footer-nav">
+
+            <div class="container">
+
+                <ul class="footer-nav-list">
+
+                    <li class="footer-nav-item">
+                        <h2 class="nav-title">Popular Categories</h2>
+                    </li>
+
+                    <li class="footer-nav-item">
+                        <a href="#" class="footer-nav-link">Fashion</a>
+                    </li>
+
+                    <li class="footer-nav-item">
+                        <a href="#" class="footer-nav-link">Electronic</a>
+                    </li>
+
+                    <li class="footer-nav-item">
+                        <a href="#" class="footer-nav-link">Cosmetic</a>
+                    </li>
+
+                    <li class="footer-nav-item">
+                        <a href="#" class="footer-nav-link">Health</a>
+                    </li>
+
+                    <li class="footer-nav-item">
+                        <a href="#" class="footer-nav-link">Watches</a>
+                    </li>
+
+                </ul>
+
+                <ul class="footer-nav-list">
+
+                    <li class="footer-nav-item">
+                        <h2 class="nav-title">Products</h2>
+                    </li>
+
+                    <li class="footer-nav-item">
+                        <a href="#" class="footer-nav-link">Prices drop</a>
+                    </li>
+
+                    <li class="footer-nav-item">
+                        <a href="#" class="footer-nav-link">New products</a>
+                    </li>
+
+                    <li class="footer-nav-item">
+                        <a href="#" class="footer-nav-link">Best sales</a>
+                    </li>
+
+                    <li class="footer-nav-item">
+                        <a href="#" class="footer-nav-link">Contact us</a>
+                    </li>
+
+                    <li class="footer-nav-item">
+                        <a href="#" class="footer-nav-link">Sitemap</a>
+                    </li>
+
+                </ul>
+
+                <ul class="footer-nav-list">
+
+                    <li class="footer-nav-item">
+                        <h2 class="nav-title">Our Company</h2>
+                    </li>
+
+                    <li class="footer-nav-item">
+                        <a href="#" class="footer-nav-link">Delivery</a>
+                    </li>
+
+                    <li class="footer-nav-item">
+                        <a href="#" class="footer-nav-link">Legal Notice</a>
+                    </li>
+
+                    <li class="footer-nav-item">
+                        <a href="#" class="footer-nav-link">Terms and conditions</a>
+                    </li>
+
+                    <li class="footer-nav-item">
+                        <a href="#" class="footer-nav-link">About us</a>
+                    </li>
+
+                    <li class="footer-nav-item">
+                        <a href="#" class="footer-nav-link">Secure payment</a>
+                    </li>
+
+                </ul>
+
+                <ul class="footer-nav-list">
+
+                    <li class="footer-nav-item">
+                        <h2 class="nav-title">Services</h2>
+                    </li>
+
+                    <li class="footer-nav-item">
+                        <a href="#" class="footer-nav-link">Prices drop</a>
+                    </li>
+
+                    <li class="footer-nav-item">
+                        <a href="#" class="footer-nav-link">New products</a>
+                    </li>
+
+                    <li class="footer-nav-item">
+                        <a href="#" class="footer-nav-link">Best sales</a>
+                    </li>
+
+                    <li class="footer-nav-item">
+                        <a href="#" class="footer-nav-link">Contact us</a>
+                    </li>
+
+                    <li class="footer-nav-item">
+                        <a href="#" class="footer-nav-link">Sitemap</a>
+                    </li>
+
+                </ul>
+
+                <ul class="footer-nav-list">
+
+                    <li class="footer-nav-item">
+                        <h2 class="nav-title">Contact</h2>
+                    </li>
+
+                    <li class="footer-nav-item flex">
+                        <div class="icon-box">
+                            <ion-icon name="location-outline"></ion-icon>
+                        </div>
+
+                        <address class="content">
+                            419 State 414 Rte
+                            Beaver Dams, New York(NY), 14812, USA
+                        </address>
+                    </li>
+
+                    <li class="footer-nav-item flex">
+                        <div class="icon-box">
+                            <ion-icon name="call-outline"></ion-icon>
+                        </div>
+
+                        <a href="tel:+607936-8058" class="footer-nav-link">(607) 936-8058</a>
+                    </li>
+
+                    <li class="footer-nav-item flex">
+                        <div class="icon-box">
+                            <ion-icon name="mail-outline"></ion-icon>
+                        </div>
+
+                        <a href="mailto:example@gmail.com" class="footer-nav-link">example@gmail.com</a>
+                    </li>
+
+                </ul>
+
+                <ul class="footer-nav-list">
+
+                    <li class="footer-nav-item">
+                        <h2 class="nav-title">Follow Us</h2>
+                    </li>
+
+                    <li>
+                        <ul class="social-link">
+
+                            <li class="footer-nav-item">
+                                <a href="#" class="footer-nav-link">
+                                    <ion-icon name="logo-facebook"></ion-icon>
+                                </a>
+                            </li>
+
+                            <li class="footer-nav-item">
+                                <a href="#" class="footer-nav-link">
+                                    <ion-icon name="logo-twitter"></ion-icon>
+                                </a>
+                            </li>
+
+                            <li class="footer-nav-item">
+                                <a href="#" class="footer-nav-link">
+                                    <ion-icon name="logo-linkedin"></ion-icon>
+                                </a>
+                            </li>
+
+                            <li class="footer-nav-item">
+                                <a href="#" class="footer-nav-link">
+                                    <ion-icon name="logo-instagram"></ion-icon>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            <div class="container">
+
+                <img src="./assets/images/payment.png" alt="payment method" class="payment-img">
+
+                <p class="copyright">
+                    Copyright &copy; 2025 <a href="">E-Fourniture</a> - Tous droits réservés - Réalisé par <a
+                        href="https://cheickamhed.github.io/fikasso-ft/" target="_blank">FIKASSO Security</a>
+                </p>
+
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/checkout.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const paymentMethods = document.querySelectorAll('.payment-method');
+            const mobilePayment = document.getElementById('mobile-payment');
+            const CardPayment = document.getElementById('card-payment');
+            const mobilePaymentContent = document.getElementById('mobile-payment-content');
+            const CardPaymentContent = document.getElementById('card-payment-content');
+            const customBtn = document.querySelector('.custom-btn');
+            const customAmount = document.getElementById('custom-amount');
+            
+            let selectedPaymentMethod = 'mobile';
+            
+            // Modes de paiement
+            paymentMethods.forEach(method => {
+                method.addEventListener('click', function() {
+                    paymentMethods.forEach(m => {
+                        m.style.border = '1px solid var(--gray-200)';
+                        m.style.background = 'white';
+                    });
+                    this.style.border = '2px solid var(--primary-blue)';
+                    this.style.background = 'rgba(59, 130, 246, 0.1)';
+                    selectedPaymentMethod = this.dataset.method;
+                });
+            });
+
+            CardPayment.addEventListener('click', function(){
+                mobilePaymentContent.style.display = 'none';
+                CardPaymentContent.style.display = 'block';
+            });
+
+            mobilePayment.addEventListener('click', function(){
+                mobilePaymentContent.style.display = 'block';
+                CardPaymentContent.style.display = 'none';
+            });
+
+            // Sélection par défaut
+            paymentMethods[0].click();
+        });
+    </script>
+
+</body>
+
+</html>
