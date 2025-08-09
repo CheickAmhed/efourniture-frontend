@@ -7,9 +7,9 @@
   --spanish-gray: hsl(0, 0%, 60%);
   --sonic-silver: hsl(0, 0%, 47%);
   --eerie-black: hsl(0, 0%, 13%);
-  --salmon-pink: hsl(353, 100%, 78%);
+  --salmon-pink: hsl(152, 51%, 52%);
   --sandy-brown: hsl(29, 90%, 65%);
-  --bittersweet: hsl(0, 100%, 70%);
+  --bittersweet: hsl(152, 51%, 52%); /*hsl(0, 100%, 70%)*/
   --ocean-green: hsl(152, 51%, 52%);
   --davys-gray: hsl(0, 0%, 33%);
   --cultured: hsl(0, 0%, 93%);
@@ -514,6 +514,11 @@ body::-webkit-scrollbar-thumb:hover {
   margin-bottom: 20px;
 }
 
+.header-logo img{
+  width: 100px;
+  height: 50px;
+}
+
 .header-search-container {
   position: relative;
 }
@@ -782,7 +787,7 @@ body::-webkit-scrollbar-thumb:hover {
   opacity: 0.6;
   position: relative;
   min-width: 100%;
-  max-height: 450px;
+  max-height: 700px;
   aspect-ratio: 1 / 1;
   border-radius: var(--border-radius-md);
   overflow: hidden;
@@ -797,7 +802,7 @@ body::-webkit-scrollbar-thumb:hover {
 .banner-carousel-item .banner-img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit:fill;
   object-position: right;
 }
 
