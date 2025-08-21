@@ -9,10 +9,10 @@
     <meta name="keywords" content="Plateforme, E-commerce, Fourniture, Scolaire, Burkina Faso, Accueille">
     <meta name="author" content="FIKASSO Security">
 
-    <title>Bangré-Fourniture-Scolaire-Fournitures</title>
+    <title>Bangré-Fourniture-Scolaire-Fournitures-Détails</title>
     <link rel="shortcut icon" href="./assets/images/logo/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/checkout.css">
+    <link rel="stylesheet" href="./assets/css/list_detail.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet"
@@ -25,9 +25,7 @@
     <div class="overlay" data-overlay></div>
 
     <div class="modal" data-modal>
-
         <div class="modal-close-overlay" data-modal-overlay></div>
-
         <div class="modal-content">
 
             <button class="modal-close-btn" data-modal-close>
@@ -60,9 +58,7 @@
                 </form>
 
             </div>
-
         </div>
-
     </div>
 
     <div class="notification-toast" data-toast>
@@ -164,7 +160,7 @@
                 <div class="header-user-actions">
 
                     <a href="cart.html" class="action-btn">
-                        <ion-icon name="bag-outline" class="action-btn-icon active"></ion-icon>
+                        <ion-icon name="bag-outline" class="action-btn-icon"></ion-icon>
                         <span class="count">3</span>
                     </a>
 
@@ -341,7 +337,7 @@
                     </li>
 
                     <li class="menu-category">
-                        <a href="list.html" class="menu-title">Listes</a>
+                        <a href="list.html" class="menu-title active">Listes</a>
                     </li>
 
                     <li class="menu-category">
@@ -364,7 +360,7 @@
         <div class="mobile-bottom-navigation">
 
             <a href="index.html" class="action-btn">
-                <ion-icon name="home-outline" class="action-btn-icon"></ion-icon>
+                <ion-icon name="home-outline" class="action-btn-icon active"></ion-icon>
             </a>
             <!--
       <button class="action-btn" data-mobile-menu-open-btn>
@@ -372,7 +368,7 @@
       </button>
     -->
             <a href="cart.html" class="action-btn">
-                <ion-icon name="bag-outline" class="action-btn-icon active"></ion-icon>
+                <ion-icon name="bag-outline" class="action-btn-icon"></ion-icon>
                 <span class="count">3</span>
             </a>
 
@@ -603,282 +599,93 @@
     </header>
 
     <main>
-        <div class="banner">
+        <div class="list-detail-container">
             <div class="container">
-                <div class="banner-carousel">
-                    <div class="banner-carousel-track">
-                        <div class="banner-carousel-item">
 
-                            <img src="./assets/images/order.png" alt="women's latest fashion sale"
-                                class="banner-img">
+                <div class="list-detail-header">
 
+                    <div class="list-detail-header-img list-detail-header-item">
+                        <img src="./assets/images/list/school-1.png" alt="product image">
+                    </div>
+
+                    <div class="list-detail-header-content list-detail-header-item">
+                        <h2 class="list-detail-header-content-title">Ecole Primaire Privée la Voix du Succes</h2>
+
+                        <p class="list-detail-header-content-subtitle">Liste de fournitures de la classe de CE2</p>
+                    </div>
+
+                    <div class="list-detail-header-img list-detail-header-item">
+                        <img src="./assets/images/list/school-1.png" alt="product image">
+                    </div>
+
+                </div>
+
+                <div class="cart-section">
+                    <div class="cart-items">
+                        <div class="cart-item">
+                            <img src="./assets/images/products/prod46.png" alt="Cahier de 200 pages" class="cart-item-img">
+                            <div class="cart-item-details">
+                                <h3 class="cart-item-title">Cahier de 200 pages (5)</h3>
+                                <span class="cart-item-price">Prix Unitaire: 500 FCFA</span>
+                                <span class="cart-item-price">Prix Total:  2500FCFA</span>
+                            </div>
+                            <div class="cart-item-quantity">
+                                <input type="checkbox" class="quantity-input" checked>
+                            </div>
+                        </div>
+                        <div class="cart-item" >
+                            <img src="./assets/images/products/prod10.png" alt="Stylo Bille Bleu" class="cart-item-img">
+                            <div class="cart-item-details">
+                                <h3 class="cart-item-title">Stylo Bille Bleu (3)</h3>
+                                <span class="cart-item-price">Prix Unitaire: 100 FCFA</span>
+                                <span class="cart-item-price">Prix Total:  300FCFA</span>
+                            </div>
+                            <div class="cart-item-quantity">
+                                <input type="checkbox" class="quantity-input" checked>
+                            </div>
+                        </div>
+                        <div class="cart-item">
+                            <img src="./assets/images/products/prod41.png" alt="Stylo Bille Bleu" class="cart-item-img">
+                            <div class="cart-item-details">
+                                <h3 class="cart-item-title">Stylo Bille Bleu (1)</h3>
+                                <span class="cart-item-price">Prix Unitaire: 5000 FCFA</span>
+                                <span class="cart-item-price">Prix Total:  5000FCFA</span>
+                            </div>
+                            <div class="cart-item-quantity">
+                                <input type="checkbox" class="quantity-input" checked>
+                            </div>
                         </div>
                     </div>
                 </div>
+
+                <div class="cart-summary">
+                    <div class="summary-item">
+                        <span>Total de la liste:</span>
+                        <span class="total-amount">0.00 FCFA</span>
+                    </div>
+                    <div class="summary-item">
+                        <span>Nombre de listes:</span>
+                        <div class="product-view-quantity">
+                            <button class="btn-quantity" data-quantity-btn="minus">
+                                <ion-icon name="remove-outline"></ion-icon>
+                            </button>
+
+                            <span class="quantity" data-quantity>1</span>
+
+                            <button class="btn-quantity" data-quantity-btn="plus">
+                                <ion-icon name="add-outline"></ion-icon>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="summary-item total">
+                        <span>Total:</span>
+                        <span class="total-amount">0.00 FCFA</span>
+                    </div>
+                    <a href="cart.html" class="btn-checkout">Ajouter au panier</a>
+                </div>
+
             </div>
         </div>
-
-        <section class="checkout-process">
-            <div class="container">
-                <h2 class="section-title">Processus de Commande</h2>
-
-                <div class="checkout-steps">
-                    <div class="step active" data-step="1">
-                        <div class="step-icon">1</div>
-                        <div class="step-title">Adresse de Livraison</div>
-                    </div>
-                    <div class="step" data-step="2">
-                        <div class="step-icon">2</div>
-                        <div class="step-title">Méthode de Paiement</div>
-                    </div>
-                    <div class="step" data-step="3">
-                        <div class="step-icon">3</div>
-                        <div class="step-title">Récapitulatif</div>
-                    </div>
-                </div>
-
-                <div class="checkout-content">
-
-                    <!-- Step 1: Delivery Address -->
-                    <div class="checkout-section active" id="delivery-address">
-                        <h3>Sélectionnez votre adresse de livraison</h3>
-                        <div class="map-container">
-                            <!-- <div id="map" style="height: 400px; width: 100%;"></div> -->
-                             <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d12248.123456789!2d-1.501158!3d12.409653!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1690000000000!5m2!1sen!2sus"
-                                style="border:0;"
-                                allowfullscreen=""
-                                loading="lazy"
-                                referrerpolicy="no-referrer-when-downgrade">
-                            </iframe>
-
-                        </div>
-                        <form class="address-form">
-                            <label for="full-address">Adresse Complète *</label>
-                            <input type="text" id="full-address" placeholder="Ave des Comores, Somgandé, Ouagadougou" readonly style="width: 100%; padding: 0.75rem; border: 1px solid var(--gray-300); border-radius: 0.5rem;">
-
-                            <label for="delivery-notes">Notes de livraison (facultatif):</label>
-                            <textarea id="delivery-notes" rows="3" placeholder="Ex: Laisser le colis chez le voisin" style="width: 100%; padding: 0.75rem; border: 1px solid var(--gray-300); border-radius: 0.5rem; height: 100px; resize: vertical;"></textarea>
-
-                            <button type="button" class="btn btn-primary next-step" data-next-step="2">
-                                Paiement
-                            </button>
-                        </form>
-                    </div>
-
-                    <!-- Step 2: Payment Methods -->
-                    <div class="checkout-section" id="payment-methods">
-                        <h3>Choisissez votre mode de paiement</h3>
-
-                        <section>
-                            <div class="grid grid-cols-2">
-                                <div id="mobile-payment" class="card payment-method" style="cursor: pointer;" data-method="mobile">
-                                    <div class="card-content" style="text-align: center;">
-                                        <div style="font-size: 3rem; color: var(--primary-blue); margin-bottom: 1rem;">📱</div>
-                                        <h3 style="font-size: 1.25rem; font-weight: bold; margin-bottom: 0.5rem;">Paiement Mobile Money</h3>
-                                        <p style="color: var(--gray-600);">Orange Money, Moov Money, etc...</p>
-                                    </div>
-                                </div>
-                                
-                                <div id="card-payment" class="card payment-method" style="cursor: pointer;" data-method="card">
-                                    <div class="card-content" style="text-align: center;">
-                                        <div style="font-size: 3rem; color: var(--green-500); margin-bottom: 1rem;">💳</div>
-                                        <h3 style="font-size: 1.25rem; font-weight: bold; margin-bottom: 0.5rem;">Paiement Bancaire</h3>
-                                        <p style="color: var(--gray-600);">Banque, Visa, Mastercard, etc...</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-
-                        <section>
-                            <div class="card">
-                                <div class="card-content">
-
-                                    <div id="mobile-payment-content" class="grid grid-cols-2" style="gap: 1.5rem;">
-                                        <h4 style="font-size: 1.8rem;color: var(--bittersweet);margin-bottom: 15px;">Effectuer le paiement sur la Plateforme</h4>
-
-                                        <div style="padding: 20px;border: 1px dashed var(--bittersweet);border-radius: 8px;background-color: var(--misty-rose);margin-bottom: 30px;">
-                                            <div style="display: flex; gap: 1rem;">
-                                                <div style="flex: 1;">
-                                                    <label for="operator" style="display: block; font-weight: 600; margin-bottom: 0.5rem;">Opérateur *</label>
-                                                    <input type="text" list="operatorOptions" style="width: 100%; padding: 0.75rem; border: 1px solid var(--gray-300); border-radius: 0.5rem; background:none;" required>
-                                                    <datalist name="operator" id="operatorOptions">
-                                                        <option>Orange Money</option>
-                                                        <option>Moov Money</option>
-                                                        <option>Telecel Money</option>
-                                                        <option>Sank Money</option>
-                                                        <option>Coris Money</option>
-                                                        <option>LigdiCash</option>
-                                                    </datalist>
-                                                </div>
-
-                                                <div style="flex: 1;">
-                                                    <label for="phone" style="display: block; font-weight: 600; margin-bottom: 0.5rem;">Téléphone *</label>
-                                                    <input 
-                                                        id="phone" 
-                                                        name="phone"
-                                                        type="tel" 
-                                                        required 
-                                                        style="width: 100%; padding: 0.75rem; border: 1px solid var(--gray-300); border-radius: 0.5rem;"
-                                                    >
-                                                </div>
-                                            </div>
-
-                                            <div>
-                                                <label for="otp" style="display: block; font-weight: 600; margin-bottom: 0.5rem;">Code OTP *</label>
-                                                <input 
-                                                    id="otp" 
-                                                    name="otp"
-                                                    type="number" 
-                                                    required 
-                                                    style="width: 100%; padding: 0.75rem; border: 1px solid var(--gray-300); border-radius: 0.5rem;"
-                                                >
-                                            </div>
-                                        </div>
-
-                                        <br>
-
-                                        <div class="payment-details" id="mobile-money-details">
-                                            <h4>Effectuer un Depôt Mobile Money</h4>
-                                            <p>Veuillez envoyer le montant total à l'un des numéros suivants:</p>
-                                            <ul>
-                                                <li>Moov Money: +226 70 00 00 00</li>
-                                                <li>Orange Money: +226 76 00 00 00</li>
-                                                <li>Telecel Money: +226 78 00 00 00</li>
-                                            </ul>
-                                            <label for="transaction-id" style="display: block; font-weight: 600; margin-bottom: 0.5rem;">ID de Transaction *</label>
-                                            <input type="text" id="transaction-id" placeholder="Entrez l'ID de votre transaction" required>
-                                        </div>
-
-                                    </div>
-
-                                    <div id="card-payment-content" class="grid grid-cols-2" style="gap: 1.5rem; display: none;">
-                                        <div style="padding: 20px;border: 1px dashed var(--bittersweet);border-radius: 8px;background-color: var(--misty-rose);margin-bottom: 30px;">
-                                            <h4 style="font-size: 1.8rem;color: var(--bittersweet);margin-bottom: 15px;">Effectuer le paiement sur la Plateforme</h4>
-
-                                            <div>
-                                                <label for="card-number" style="display: block; font-weight: 600; margin-bottom: 0.5rem;">Numero de carte *</label>
-                                                <input 
-                                                    id="card-number" 
-                                                    name="card-number"
-                                                    type="number" 
-                                                    required 
-                                                    style="width: 100%; padding: 0.75rem; border: 1px solid var(--gray-300); border-radius: 0.5rem;"
-                                                >
-                                            </div>
-
-                                            <div style="display: flex; gap: 1rem;">
-                                                <div style="flex: 1;">
-                                                    <label for="exp-date" style="display: block; font-weight: 600; margin-bottom: 0.5rem;">Date d'expiration *</label>
-                                                    <input 
-                                                        id="exp-date" 
-                                                        name="exp-date"
-                                                        type="date" 
-                                                        required 
-                                                        style="width: 100%; padding: 0.75rem; border: 1px solid var(--gray-300); border-radius: 0.5rem;"
-                                                    >
-                                                </div>
-                                                <div style="flex: 1;">
-                                                    <label for="cvc" style="display: block; font-weight: 600; margin-bottom: 0.5rem;">CVC *</label>
-                                                    <input 
-                                                        id="cvc" 
-                                                        name="cvc"
-                                                        type="number" 
-                                                        required 
-                                                        style="width: 100%; padding: 0.75rem; border: 1px solid var(--gray-300); border-radius: 0.5rem;"
-                                                    >
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <br>
-
-                                        <div class="payment-details" id="bank-transfer-details">
-                                            <h4>Effectuer un Virement Bancaire</h4>
-                                            <p>Veuillez effectuer un virement au compte suivant:</p>
-                                            <ul>
-                                                <li>Nom de la Banque: Coris Bank</li>
-                                                <li>Nom du Compte: Bangre SARL</li>
-                                                <li>Numéro de Compte: 413548756987</li>
-                                                <li>Code SWIFT: BUBFBFBF</li>
-                                            </ul>
-                                            <label for="bank-ref" style="display: block; font-weight: 600; margin-bottom: 0.5rem;">Référence du Virement *</label>
-                                            <input type="text" id="bank-ref" placeholder="Entrez la référence de votre virement" required>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-
-                        <br>
-
-                        <section style="background: var(--gray-50); border-radius: 1.5rem; padding: 2rem;">
-                            <div style="text-align: center; margin-bottom: 1.5rem;">
-                                <div style="font-size: 3rem; color: var(--green-500); margin-bottom: 1rem;">🛡️</div>
-                                <h3 style="font-size: 1.5rem; font-weight: bold; color: var(--gray-900); margin-bottom: 0.5rem;">
-                                    Paiement sécurisé
-                                </h3>
-                                <p style="color: var(--gray-600);">
-                                    Vos informations sont protégées et votre paiement est traité de manière sécurisée
-                                </p>
-                            </div>
-                            <div class="grid grid-cols-3" style="text-align: center;">
-                                <div style="display: flex; align-items: center; justify-content: center; gap: 0.5rem;">
-                                    <span style="color: var(--green-500);">✅</span>
-                                    <span style="font-size: 0.875rem; color: var(--gray-600);">Cryptage SSL</span>
-                                </div>
-                                <div style="display: flex; align-items: center; justify-content: center; gap: 0.5rem;">
-                                    <span style="color: var(--green-500);">✅</span>
-                                    <span style="font-size: 0.875rem; color: var(--gray-600);">Reçu fiscal</span>
-                                </div>
-                                <div style="display: flex; align-items: center; justify-content: center; gap: 0.5rem;">
-                                    <span style="color: var(--green-500);">✅</span>
-                                    <span style="font-size: 0.875rem; color: var(--gray-600);">Transparence totale</span>
-                                </div>
-                            </div>
-                        </section>
-
-
-                        <div class="checkout-actions">
-                            <button type="button" class="btn btn-primary next-step" data-next-step="3">
-                                Récapitulatif
-                            </button>
-                        </div>
-                    </div>
-
-                    <!-- Step 3: Summary -->
-                    <div class="checkout-section" id="order-summary">
-                        <h3>Récapitulatif de votre commande</h3>
-                        <div class="summary-details">
-
-                            <ul id="summary-items">
-                                <li><span><h4>Adresse de Livraison:</h4></span><span>Ave des Comores, Somgandé, Ouagadougou, Burkina Faso</span></li>
-                                <li><span><h4>Mode de Paiement: </h4></span><span>Orange Money (+226 75 00 00 00)</span></li>
-                            </ul>
-
-                            <h4>Articles commandés:</h4>
-                            <ul id="summary-items">
-                                <li><span>Produit A</span><span>1 x 15.000 FCFA</span></li>
-                                <li><span>Produit B</span><span>2 x 5.000 FCFA</span></li>
-                                <li><span>Frais de livraison</span><span>2.500 FCFA</span></li>
-                            </ul>
-
-                            <div class="summary-total">
-                                <span>Total:</span>
-                                <span id="summary-total-amount">32.500 FCFA</span>
-                            </div>
-                        </div>
-
-                        <div class="checkout-actions">
-                            <button type="button" class="btn btn-secondary">Annuler la commande</button>
-                            <button type="button" class="btn btn-success" id="place-order-btn">Confirmer la commande</button>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </section>
     </main>
 
     <footer>
@@ -1168,49 +975,9 @@
     </footer>
 
     <script src="./assets/js/script.js"></script>
-    <script src="./assets/js/checkout.js"></script>
+    <script src="./assets/js/product-detail.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const paymentMethods = document.querySelectorAll('.payment-method');
-            const mobilePayment = document.getElementById('mobile-payment');
-            const CardPayment = document.getElementById('card-payment');
-            const mobilePaymentContent = document.getElementById('mobile-payment-content');
-            const CardPaymentContent = document.getElementById('card-payment-content');
-            const customBtn = document.querySelector('.custom-btn');
-            const customAmount = document.getElementById('custom-amount');
-            
-            let selectedPaymentMethod = 'mobile';
-            
-            // Modes de paiement
-            paymentMethods.forEach(method => {
-                method.addEventListener('click', function() {
-                    paymentMethods.forEach(m => {
-                        m.style.border = '1px solid var(--gray-200)';
-                        m.style.background = 'white';
-                    });
-                    this.style.border = '2px solid var(--primary-blue)';
-                    this.style.background = 'rgba(59, 130, 246, 0.1)';
-                    selectedPaymentMethod = this.dataset.method;
-                });
-            });
-
-            CardPayment.addEventListener('click', function(){
-                mobilePaymentContent.style.display = 'none';
-                CardPaymentContent.style.display = 'block';
-            });
-
-            mobilePayment.addEventListener('click', function(){
-                mobilePaymentContent.style.display = 'block';
-                CardPaymentContent.style.display = 'none';
-            });
-
-            // Sélection par défaut
-            paymentMethods[0].click();
-        });
-    </script>
 
 </body>
 
